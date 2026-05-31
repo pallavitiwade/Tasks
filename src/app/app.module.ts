@@ -12,6 +12,16 @@ import { GetConfirmComponent } from './components/get-confirm/get-confirm.compon
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { StudentDashboardComponent } from './components/student-dashboard/student-dashboard.component';
+import { StudentFormComponent } from './components/student-form/student-form.component';
+import { StudentTabalComponent } from './components/student-tabal/student-tabal.component';
+import {MatCardModule} from '@angular/material/card';
+
+
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -20,6 +30,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TodoFormComponent,
     TodoListComponent,
     GetConfirmComponent,
+    StudentDashboardComponent,
+    StudentFormComponent,
+    StudentTabalComponent,
 
 
   ],
@@ -31,7 +44,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
      MatIconModule,
      MatDialogModule,
      MatSnackBarModule,
-         BrowserAnimationsModule,
+    BrowserAnimationsModule,
+    MatCardModule
 
 
     
