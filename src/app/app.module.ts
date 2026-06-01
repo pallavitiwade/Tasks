@@ -23,6 +23,9 @@ import { TodoListTwoComponent } from './components/todo-list-two/todo-list-two.c
 import { TodoThreeDashboardComponent } from './components/todo-three-dashboard/todo-three-dashboard.component';
 import { TodoFormThreeComponent } from './components/todo-form-three/todo-form-three.component';
 import { TodoListThreeComponent } from './components/todo-list-three/todo-list-three.component';
+import { TodoDashboardFourComponent } from './components/todo-dashboard-four/todo-dashboard-four.component';
+import { TodoFormFourComponent } from './components/todo-form-four/todo-form-four.component';
+import { TodoListFourComponent } from './components/todo-list-four/todo-list-four.component';
 
 
 
@@ -45,7 +48,10 @@ import { TodoListThreeComponent } from './components/todo-list-three/todo-list-t
       TodoListTwoComponent,
       TodoThreeDashboardComponent,
       TodoFormThreeComponent,
-      TodoListThreeComponent
+      TodoListThreeComponent,
+      TodoDashboardFourComponent,
+      TodoFormFourComponent,
+      TodoListFourComponent
 
   ],
 
