@@ -6,7 +6,7 @@
                 <label for="todoItem">TodoItem</label>
                 <input required ngModel name="todoItem" type="text" class="form-control">
             </div>
-            <button type="submit" [disabled]="todoForm.invalid" *ngIf="!isInEditMode" mat-raised-button color="primary" class="w-100">Add Student</button>
+            <button type="submit" [disabled]="todoForm.invalid" *ngIf="!isInEditMode" mat-raised-button color="primary" class="w-100">Add Todo</button>
             <button (click)="onUpdate()" type="button" *ngIf="isInEditMode" mat-raised-button color="warn" class="w-100">Update</button>
          </form>
 
