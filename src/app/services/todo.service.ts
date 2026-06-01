@@ -10,25 +10,23 @@ export class TodoService {
  todosArr:Array<Itodos> = [
   {
     todoId:'1',
-    todoItem: "JavaScript"
+    todoItem: "learn agile"
   },
   {
     todoId:' 2',
-    todoItem: "Angular"
+    todoItem: "learn node-js"
   },
   {
     todoId: '3',
-    todoItem: "Bootstrap"
+    todoItem: "scss"
   },
   {
     todoId: '4',
-    todoItem: "TypeScript"
-  },
-  {
-    todoId: '5',
-    todoItem: "Git"
+    todoItem: "mongodb"
   }
+    
 ];
+
 
 editTodoSub$:Subject<Itodos>=new Subject<Itodos>()
   constructor() {}

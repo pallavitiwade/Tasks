@@ -50,12 +50,14 @@ onRemove(id:string){
             this._snackBar.openSnackBar(err.msg)
 
         }
+
       })
     }
   })
 
 
 }
+
 onEditTodo(todo:Itodos){
   console.log(todo)
   this._TodoService.editTodoSub$.next(todo)

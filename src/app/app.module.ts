@@ -16,6 +16,10 @@ import { StudentDashboardComponent } from './components/student-dashboard/studen
 import { StudentFormComponent } from './components/student-form/student-form.component';
 import { StudentTabalComponent } from './components/student-tabal/student-tabal.component';
 import {MatCardModule} from '@angular/material/card';
+import { PassangerModule } from './components/passanger/passanger/passanger.module';
+import { TodoDashboardTwoComponent } from './components/todo-dashboard-two/todo-dashboard-two.component';
+import { TodoFormTwoComponent } from './components/todo-form-two/todo-form-two.component';
+import { TodoListTwoComponent } from './components/todo-list-two/todo-list-two.component';
 
 
 
@@ -33,9 +37,16 @@ import {MatCardModule} from '@angular/material/card';
     StudentDashboardComponent,
     StudentFormComponent,
     StudentTabalComponent,
-
+    TodoDashboardTwoComponent,
+    TodoFormTwoComponent,
+      TodoListTwoComponent
 
   ],
+
+
+
+
+
   imports: [
     BrowserModule,
     MatButtonModule,
@@ -45,7 +56,8 @@ import {MatCardModule} from '@angular/material/card';
      MatDialogModule,
      MatSnackBarModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    PassangerModule
 
 
     
