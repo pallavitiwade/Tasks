@@ -20,6 +20,9 @@ import { PassangerModule } from './components/passanger/passanger/passanger.modu
 import { TodoDashboardTwoComponent } from './components/todo-dashboard-two/todo-dashboard-two.component';
 import { TodoFormTwoComponent } from './components/todo-form-two/todo-form-two.component';
 import { TodoListTwoComponent } from './components/todo-list-two/todo-list-two.component';
+import { TodoThreeDashboardComponent } from './components/todo-three-dashboard/todo-three-dashboard.component';
+import { TodoFormThreeComponent } from './components/todo-form-three/todo-form-three.component';
+import { TodoListThreeComponent } from './components/todo-list-three/todo-list-three.component';
 
 
 
@@ -39,7 +42,10 @@ import { TodoListTwoComponent } from './components/todo-list-two/todo-list-two.c
     StudentTabalComponent,
     TodoDashboardTwoComponent,
     TodoFormTwoComponent,
-      TodoListTwoComponent
+      TodoListTwoComponent,
+      TodoThreeDashboardComponent,
+      TodoFormThreeComponent,
+      TodoListThreeComponent
 
   ],
 
