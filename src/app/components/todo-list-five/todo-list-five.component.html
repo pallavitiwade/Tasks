@@ -1,0 +1,16 @@
+
+
+<ul class="list-group" *ngIf="todosArrys.length > 0;else noTodoItem">
+    <li *ngFor="let todo of todosArrys" class="list-group-item d-flex justify-content-between"> 
+        <strong>{{todo.todoItem}}</strong>
+        <div>
+            <button (click)="onEdit(todo)" mat-mini-fab color="primary" class="mr-3"><mat-icon>edit</mat-icon></button>
+          <button (click)="onRemove(todo.todoId)" mat-mini-fab color="warn"><mat-icon>delete</mat-icon></button>
+
+        </div>
+    </li>
+</ul>
+
+<ng-template #noTodoItem>
+    <p class="alert alert-info">No TodoItems Added Yet !!!</p>
+</ng-template>
