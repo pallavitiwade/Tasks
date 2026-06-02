@@ -38,6 +38,9 @@ import { StudentListThreeComponent } from './components/student-list-three/stude
 import { StudentDashFourComponent } from './components/student-dash-four/student-dash-four.component';
 import { StudentFormFourComponent } from './components/student-form-four/student-form-four.component';
 import { StudentListFourComponent } from './components/student-list-four/student-list-four.component';
+import { StudentDashFiveComponent } from './components/student-dash-five/student-dash-five.component';
+import { StudentFormFiveComponent } from './components/student-form-five/student-form-five.component';
+import { StudentListFiveComponent } from './components/student-list-five/student-list-five.component';
 
 
 
@@ -75,7 +78,10 @@ import { StudentListFourComponent } from './components/student-list-four/student
       StudentListThreeComponent,
       StudentDashFourComponent,
       StudentFormFourComponent,
-      StudentListFourComponent
+      StudentListFourComponent,
+      StudentDashFiveComponent,
+      StudentFormFiveComponent,
+      StudentListFiveComponent
 
   ],
 
