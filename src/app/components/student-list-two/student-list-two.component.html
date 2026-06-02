@@ -1,0 +1,60 @@
+
+<table class="table table-bordered mb-4 mb-md-0 mt-4 text-center">
+<thead>
+    <tr>
+        <th>SR.No</th>
+        <th>FullName</th>
+        <th>Email</th>
+        <th>contact</th>
+        <th>IsActive</th>
+        <th>Edit</th>
+        <th>Remove</th>
+
+    </tr>
+</thead>
+<tbody *ngIf="stdsArr.length>0; else noTable">
+    <tr *ngFor="let std of stdsArr; index as i">
+        <td>{{i+1}}</td>
+        <td>{{std.Fullname}}</td>
+        <td>{{std.Email}}</td>
+        <td>{{std.contact}}</td>
+        <td>{{std.IsActive ? 'yes':'No'}}</td>
+           
+
+        <td><button (click)="onEdit(std)" mat-mini-fab color="primary"><mat-icon>edit</mat-icon></button></td>
+       <td><button (click)="onRemove(std.id)" mat-mini-fab color="warn"><mat-icon>delete</mat-icon></button></td>
+
+
+    </tr>
+</tbody>
+</table>
+
+<ng-template #noTable>
+    <p class="alert alert-info">No Student data Added Yet !!!</p>
+</ng-template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

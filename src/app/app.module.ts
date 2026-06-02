@@ -29,6 +29,9 @@ import { TodoListFourComponent } from './components/todo-list-four/todo-list-fou
 import { TodoDashboardFiveComponent } from './components/todo-dashboard-five/todo-dashboard-five.component';
 import { TodoFormFiveComponent } from './components/todo-form-five/todo-form-five.component';
 import { TodoListFiveComponent } from './components/todo-list-five/todo-list-five.component';
+import { StudentDashboardTwoComponent } from './components/student-dashboard-two/student-dashboard-two.component';
+import { StudentFormTwoComponent } from './components/student-form-two/student-form-two.component';
+import { StudentListTwoComponent } from './components/student-list-two/student-list-two.component';
 
 
 
@@ -57,7 +60,10 @@ import { TodoListFiveComponent } from './components/todo-list-five/todo-list-fiv
       TodoListFourComponent,
       TodoDashboardFiveComponent,
       TodoFormFiveComponent,
-      TodoListFiveComponent
+      TodoListFiveComponent,
+      StudentDashboardTwoComponent,
+      StudentFormTwoComponent,
+      StudentListTwoComponent
 
   ],
 
