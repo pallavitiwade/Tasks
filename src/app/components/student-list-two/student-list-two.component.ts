@@ -16,8 +16,8 @@ stdsArr:Array<Istd>=[]
 
   constructor(
     private _stdService:StudentTwoService,
-             private _matDialog:MatDialog,
-              private _snackBar:SnackbarService
+    private _matDialog:MatDialog,
+    private _snackBar:SnackbarService
   ) { }
 
   ngOnInit(): void {
