@@ -46,6 +46,9 @@ import { formComponent } from './components/todo-form-first-I/o/o.component';
 import { ODashboardComponent } from './components/todoI/o-dashboard/o-dashboard.component';
 import { OFormComponent } from './components/todoI/o-form/o-form.component';
 import { OListComponent } from './components/todoI/o-list/o-list.component';
+import { TododashTwoComponent } from './components/tododash-two/tododash-two.component';
+import { TodoformTwoComponent } from './components/todoform-two/todoform-two.component';
+import { TodolistTwoComponent } from './components/todolist-two/todolist-two.component';
 
 
 
@@ -92,7 +95,10 @@ import { OListComponent } from './components/todoI/o-list/o-list.component';
       TodoListComponent,
       ODashboardComponent,
       OFormComponent,
-      OListComponent
+      OListComponent,
+      TododashTwoComponent,
+      TodoformTwoComponent,
+      TodolistTwoComponent
 
 
   ],
