@@ -1,0 +1,11 @@
+ <div class="row">
+    <div class="col-md-6">
+       <app-todoform-three [getEditObj]="editTodoObj" (emitUpdateTodo)="emitUpdateTodo($event)"
+            (emitNewTodo)="getNewTodo($event)"></app-todoform-three>
+    </div>
+    <div class="col-md-6">
+        <app-todolist-three (emitEditTodo)="getEditTodo($event)" (emitRemovedId)="getRemovedId($event)"
+            [getTodos]="todosArr"></app-todolist-three>
+
+    </div>
+</div>
