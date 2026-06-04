@@ -52,6 +52,9 @@ import { TodolistTwoComponent } from './components/todolist-two/todolist-two.com
 import { TododashThreeComponent } from './components/tododash-three/tododash-three.component';
 import { TodoformThreeComponent } from './components/todoform-three/todoform-three.component';
 import { TodolistThreeComponent } from './components/todolist-three/todolist-three.component';
+import { TododashFourComponent } from './components/tododash-four/tododash-four.component';
+import { TodoformFourComponent } from './components/todoform-four/todoform-four.component';
+import { TodolistFourComponent } from './components/todolist-four/todolist-four.component';
 
 
 
@@ -104,7 +107,10 @@ import { TodolistThreeComponent } from './components/todolist-three/todolist-thr
       TodolistTwoComponent,
       TododashThreeComponent,
       TodoformThreeComponent,
-      TodolistThreeComponent
+      TodolistThreeComponent,
+      TododashFourComponent,
+      TodoformFourComponent,
+      TodolistFourComponent
 
 
   ],
