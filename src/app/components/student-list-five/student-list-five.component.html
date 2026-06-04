@@ -10,7 +10,6 @@
         <th>IsActive</th>
         <th>Edit</th>
         <th>Remove</th>
-
     </tr>
 </thead>
 <tbody *ngIf="stdsArr.length>0; else noTable">
@@ -20,12 +19,8 @@
         <td>{{std.Email}}</td>
         <td>{{std.contact}}</td>
         <td>{{std.IsActive ? 'yes':'No'}}</td>
-           
-
         <td><button (click)="onEdit(std)" mat-mini-fab color="primary"><mat-icon>edit</mat-icon></button></td>
        <td><button (click)="onRemove(std.id)" mat-mini-fab color="warn"><mat-icon>delete</mat-icon></button></td>
-
-
     </tr>
 </tbody>
 </table>

@@ -41,6 +41,11 @@ import { StudentListFourComponent } from './components/student-list-four/student
 import { StudentDashFiveComponent } from './components/student-dash-five/student-dash-five.component';
 import { StudentFormFiveComponent } from './components/student-form-five/student-form-five.component';
 import { StudentListFiveComponent } from './components/student-list-five/student-list-five.component';
+import { OComponent } from './components/todo-dash-first-I/o/o.component';
+import { formComponent } from './components/todo-form-first-I/o/o.component';
+import { ODashboardComponent } from './components/todoI/o-dashboard/o-dashboard.component';
+import { OFormComponent } from './components/todoI/o-form/o-form.component';
+import { OListComponent } from './components/todoI/o-list/o-list.component';
 
 
 
@@ -81,7 +86,14 @@ import { StudentListFiveComponent } from './components/student-list-five/student
       StudentListFourComponent,
       StudentDashFiveComponent,
       StudentFormFiveComponent,
-      StudentListFiveComponent
+      StudentListFiveComponent,
+      OComponent,
+      formComponent,
+      TodoListComponent,
+      ODashboardComponent,
+      OFormComponent,
+      OListComponent
+
 
   ],
 

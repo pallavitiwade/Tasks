@@ -62,4 +62,15 @@ passangerArray:Array<Ipassanger> = [
   }
 
 
+
+
+
+
+
+
+
+
+
+  
+
 }
