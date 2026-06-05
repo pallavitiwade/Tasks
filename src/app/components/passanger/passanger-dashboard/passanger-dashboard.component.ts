@@ -9,19 +9,19 @@ import { PassangerService } from 'src/app/services/passanger.service';
   styleUrls: ['./passanger-dashboard.component.scss']
 })
 export class PassangerDashboardComponent implements OnInit {
-passArr !:Ipassanger[]
+passArr !: Ipassanger[]
 checkInArr!:Ipassanger[]
-
   constructor(
-private _passService: PassangerService 
+private _passService:PassangerService
 
   ) { }
-  ngOnInit(): void {
-    this.getpassanger()
-  }
 
-  getpassanger(){
-    this._passService.fetchpassanger()
+  ngOnInit(): void {
+   this.getPassanger()
+   this.getCheckInCount()
+  }
+  getPassanger(){
+     this._passService.fetchpassanger()
     .subscribe({
       next:data=>{
         this.passArr=data
@@ -31,5 +31,17 @@ private _passService: PassangerService
       }
     })
   }
+
+  getCheckInCount(){
+   this.checkInArr=this.passArr.filter(p=>{
+      return p.checkedIn
+    })
+  }
+getRemoveFlag(flag:boolean){
+  this.getCheckInCount()
+
+
+}
+
 
 }

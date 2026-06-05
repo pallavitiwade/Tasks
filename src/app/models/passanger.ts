@@ -11,3 +11,8 @@ export interface Ipasschild{
       name:string;
     age:number;
 }
+
+export interface IRes<T>{
+    msg:string
+    data:T
+}

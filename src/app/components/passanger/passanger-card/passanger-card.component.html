@@ -1,5 +1,4 @@
 
-<h1>hello</h1>
 <mat-card class="mb-3">
     <mat-card-title>
         <div class="form-group" [ngClass]="{
@@ -19,9 +18,9 @@
     </mat-card-content>
     <mat-divider></mat-divider>
     <mat-card-actions>
-     <button *ngIf="!isInEditMode" mat-raised-button color="primary">Edit</button>
-     <button *ngIf="isInEditMode" mat-raised-button color="primary">Done</button>
-    <button [disabled]="isInEditMode" mat-raised-button color="warn">Done</button>
+     <button *ngIf="!isInEditMode" (click)="isInEditMode=true" mat-raised-button color="primary">Edit</button>
+     <button *ngIf="isInEditMode" (click)="onUpadte()" mat-raised-button color="primary">Done</button>
+    <button [disabled]="isInEditMode" (click)="onRemove()" mat-raised-button color="warn">Remove</button>
 
 
     </mat-card-actions>

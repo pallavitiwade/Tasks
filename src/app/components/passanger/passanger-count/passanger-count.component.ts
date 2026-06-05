@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, SimpleChange } from '@angular/core';
+import { Component, Input, OnInit, SimpleChange, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-passanger-count',
@@ -6,15 +6,15 @@ import { Component, Input, OnInit, SimpleChange } from '@angular/core';
   styleUrls: ['./passanger-count.component.scss']
 })
 export class PassangerCountComponent implements OnInit {
-@Input() totalCount!:number
-@Input() checkInCount!:number
+ @Input() totalCount!:number
+  @Input() checkInCount!:number
+  constructor() { }
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log(changes)
+  }
 
-
-  constructor() {}
- ngOnChanges(changes:SimpleChange):void{
-  console.log(changes)
-}
   ngOnInit(): void {
   }
 
 }
+

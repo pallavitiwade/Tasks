@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Ipassanger } from '../models/passanger';
+import { Ipassanger, IRes } from '../models/passanger';
 import { Observable, of } from 'rxjs';
 
 @Injectable({
@@ -51,26 +51,29 @@ passangerArray:Array<Ipassanger> = [
   }
 ];
 
+ constructor() { }
+fetchpassanger():Observable<Ipassanger[]>{
+return of(this.passangerArray)
+
+}
+updatePassanger(updateObj:Ipassanger):Observable<IRes<Ipassanger>>{
+  let GET_INDEX=this.passangerArray.findIndex(p=>p.id === updateObj.id)
+  this.passangerArray[GET_INDEX]=updateObj
+  return of({
+    msg:`The passanger with id ${updateObj.id} is updated successfully!!!`,
+    data:updateObj
+  })
+}
+
+removePassanger(id:number):Observable<IRes<Ipassanger>>{
+let GET_INDEX=this.passangerArray.findIndex(p=>p.id===id)
+let removePass=this.passangerArray.splice(GET_INDEX,1)
+
+return of({
+msg:`The passanger with id ${removePass[0].id} is removed successfully`,
+data:removePass[0]
 
 
-  constructor() { }
-
-
-
-  fetchpassanger():Observable<Ipassanger[]>{
-    return of(this.passangerArray)
-  }
-
-
-
-
-
-
-
-
-
-
-
-  
-
+})
+}
 }
