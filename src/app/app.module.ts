@@ -55,6 +55,10 @@ import { TodolistThreeComponent } from './components/todolist-three/todolist-thr
 import { TododashFourComponent } from './components/tododash-four/tododash-four.component';
 import { TodoformFourComponent } from './components/todoform-four/todoform-four.component';
 import { TodolistFourComponent } from './components/todolist-four/todolist-four.component';
+import { PassangerDashTwoComponent } from './components/passanger/passanger-dash-two/passanger-dash-two.component';
+import { PassangerCardTwoComponent } from './components/passanger/passanger-card-two/passanger-card-two.component';
+import { PassangerCountTwoComponent } from './components/passanger/passanger-count-two/passanger-count-two.component';
+import { PassangerTwoModule } from './components/passanger/passanger-two/passanger-two.module';
 
 
 
@@ -110,7 +114,8 @@ import { TodolistFourComponent } from './components/todolist-four/todolist-four.
       TodolistThreeComponent,
       TododashFourComponent,
       TodoformFourComponent,
-      TodolistFourComponent
+      TodolistFourComponent,
+      
 
 
   ],
@@ -129,7 +134,8 @@ import { TodolistFourComponent } from './components/todolist-four/todolist-four.
      MatSnackBarModule,
     BrowserAnimationsModule,
     MatCardModule,
-    PassangerModule
+    PassangerModule,
+    PassangerTwoModule
 
 
     

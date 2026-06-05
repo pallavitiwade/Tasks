@@ -11,7 +11,7 @@ import { GetConfirmComponent } from '../../get-confirm/get-confirm.component';
   styleUrls: ['./passanger-card.component.scss']
 })
 export class PassangerCardComponent implements OnInit {
-  @Input() passObj !:Ipassanger
+  @Input()passObj!:Ipassanger
 @Output()emitCheckInFlag:EventEmitter<boolean>=new EventEmitter<boolean>()
 
 @ViewChild('fullname') fullname !:ElementRef
