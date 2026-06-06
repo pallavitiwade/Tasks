@@ -1,0 +1,13 @@
+<mat-card class="mt-4">
+    <form #ProductForm="ngForm" (ngSubmit)="onproductsubmit()">
+        <div class="form-group">
+            <label for="pName">Product Name</label>
+            <input type="text" ngModel #pName="ngModel" name="pName" required class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="Pdetail">Product Detail</label>
+            <input type="text" ngModel #Pdetail="ngModel" name="Pdetail" required class="form-control">
+        </div>
+        <button mat-raised-button color="primary" [disabled]="ProductForm.invalid" class="w-100">Add Product</button>
+    </form>
+</mat-card>

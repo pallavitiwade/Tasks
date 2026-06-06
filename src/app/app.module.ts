@@ -16,7 +16,6 @@ import { StudentDashboardComponent } from './components/student-dashboard/studen
 import { StudentFormComponent } from './components/student-form/student-form.component';
 import { StudentTabalComponent } from './components/student-tabal/student-tabal.component';
 import {MatCardModule} from '@angular/material/card';
-import { PassangerModule } from './components/passanger/passanger/passanger.module';
 import { TodoDashboardTwoComponent } from './components/todo-dashboard-two/todo-dashboard-two.component';
 import { TodoFormTwoComponent } from './components/todo-form-two/todo-form-two.component';
 import { TodoListTwoComponent } from './components/todo-list-two/todo-list-two.component';
@@ -55,10 +54,9 @@ import { TodolistThreeComponent } from './components/todolist-three/todolist-thr
 import { TododashFourComponent } from './components/tododash-four/tododash-four.component';
 import { TodoformFourComponent } from './components/todoform-four/todoform-four.component';
 import { TodolistFourComponent } from './components/todolist-four/todolist-four.component';
-import { PassangerDashTwoComponent } from './components/passanger/passanger-dash-two/passanger-dash-two.component';
-import { PassangerCardTwoComponent } from './components/passanger/passanger-card-two/passanger-card-two.component';
-import { PassangerCountTwoComponent } from './components/passanger/passanger-count-two/passanger-count-two.component';
-import { PassangerTwoModule } from './components/passanger/passanger-two/passanger-two.module';
+import { ProductDashComponent } from './components/product-dash/product-dash.component';
+import { ProductFormComponent } from './components/product-form/product-form.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
 
 
 
@@ -115,15 +113,12 @@ import { PassangerTwoModule } from './components/passanger/passanger-two/passang
       TododashFourComponent,
       TodoformFourComponent,
       TodolistFourComponent,
+      ProductDashComponent,
+      ProductFormComponent,
+      ProductListComponent
       
-
-
+    
   ],
-
-
-
-
-
   imports: [
     BrowserModule,
     MatButtonModule,
@@ -134,9 +129,6 @@ import { PassangerTwoModule } from './components/passanger/passanger-two/passang
      MatSnackBarModule,
     BrowserAnimationsModule,
     MatCardModule,
-    PassangerModule,
-    PassangerTwoModule
-
 
     
   ],
